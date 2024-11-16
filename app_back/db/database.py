@@ -10,10 +10,11 @@ def get_db_connection():
     connection = None
     try:
         connection = mysql.connector.connect(
-            host='localhost',
+            host='autorack.proxy.rlwy.net',
             user='root',
-            password='',  
-            database='treevitality' 
+            password='dQEtcVjUNYnrguKbGireIdKRysgtNvxT',  
+            database='treevitality',
+            port=19371
         )
         if connection.is_connected():
             print("Conexión a la base de datos exitosa")
